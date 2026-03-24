@@ -1,3 +1,3 @@
 # Diagrama de Caso de Uso — Faculdade Alpha
 
-![image](Atividade6/Diagrama.png)
+![image](https://github.com/g-ramalho/ES2N/blob/main/Atividade6/Diagrama.png)
