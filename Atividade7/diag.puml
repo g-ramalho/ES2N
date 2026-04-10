@@ -1,0 +1,30 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+
+class Usuario {
+	- codigo: int
+	- nome: String
+	- email: String
+	- senha: String
+}
+
+class Contato {
+	- nome: String
+	- telefone: String
+}
+
+class Email {
+	- endereco: String
+}
+
+class TipoEmail {
+	- descricao: String
+}
+
+Usuario "1" -- "0..*" Contato
+Contato "[tipoEmail]" -- "0..1" Email
+note on link: mínimo 1 e-mail no total
+Email "*" -- "1" TipoEmail
+
+@enduml
